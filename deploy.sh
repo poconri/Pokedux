@@ -23,4 +23,4 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:poconri/Pokedux.git main:gh-pages
 
-cd -
+cd ..

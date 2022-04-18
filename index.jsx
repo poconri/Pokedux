@@ -19,8 +19,9 @@ const store = createStore(
     composedEnhancers   // se o redux-devtools estiver instalado, usa-o
     );
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
     <Provider store={store}>
         <App />
-        </Provider>,
- );
+    </Provider>,
+    document.getElementById('root')
+    );

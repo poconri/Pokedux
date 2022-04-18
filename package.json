@@ -1,0 +1,34 @@
+{
+  "name": "pokedux",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A Redux store for Pokemon",
+  "author": {
+    "name": "Mariangélica Useche",
+    "email": "mariangelica.useche@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "fomantic-ui-css": "^2.8.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^7.2.8",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.4.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.2"
+  }
+}

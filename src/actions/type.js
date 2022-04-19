@@ -4,3 +4,4 @@ export const CLEAR_ERROR = 'CLEAR_ERROR';
 export const TOGGLE_LOADER = 'TOGGLE_LOADER';
 export const SET_FAVORITE = 'SET_FAVORITE';
 export const SEARCH = 'SEARCH';
+export const FAVORITE_POKEMON = 'FAVORITE_POKEMON';

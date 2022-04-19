@@ -5,6 +5,8 @@ const initialState = {
     listB: [],
     error: '',
     loading: false,
+    FPstatus: false,
+    noFav: false
 };
 
 const pokemonReducer = (state = initialState, action) => {
@@ -48,6 +50,25 @@ const pokemonReducer = (state = initialState, action) => {
         ...state,
         loading: !state.loading
       };
+    case "FAVORITE_POKEMON":
+      let newList = [...state.listB];
+      if(action.payload === false){
+      return {
+        ...state,
+        list: newList.filter(pokemon => !!pokemon.isFavorite),
+        listB: state.listB,
+        FPstatus: !state.FPstatus,
+        noFav: (newList.filter(pokemon => !!pokemon.isFavorite).length === 0 ) ? true : false
+      };
+    } else {
+      return {
+        ...state,
+        list: newList,
+        listB: state.listB,
+        FPstatus: !state.FPstatus,
+        noFav: false
+      };
+    }
     default:
       return state;
   }

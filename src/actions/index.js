@@ -5,7 +5,8 @@ import {
     CLEAR_ERROR,
     TOGGLE_LOADER,
     SET_FAVORITE,
-    SEARCH
+    SEARCH,
+    FAVORITE_POKEMON
 } from './type';
 
 export const setPokemons = (payload) => ({
@@ -34,6 +35,11 @@ export const setFavorite = (payload) => ({
 
 export const search = (payload) => ({
     type: SEARCH,
+    payload,
+});
+
+export const filtered_favorite_pokemon = (payload) => ({
+    type: FAVORITE_POKEMON,
     payload,
 });
 

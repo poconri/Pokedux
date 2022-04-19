@@ -10,12 +10,10 @@ import './styles.css';
 function Home() {
   const list = useSelector(state => state.list);
   const loading = useSelector((state) => state.loading);
-  const estado = useSelector((state) => state);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchPokemonsWithDetails());
-    console.log(estado);
   }, []);
 
   return (

@@ -9,7 +9,6 @@ export default function SearchBar() {
   const dispatch = useDispatch();
   const handleSearch = (e, { value }) => {
     dispatch(search (value));
-    console.log(value.length);
   }
 
   return (
